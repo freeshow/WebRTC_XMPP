@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageview_chat_left_head_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/head_portrait1" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/textview_left_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="user"
+                android:textColor="#F00"
+
+                />
+
+            <TextView
+                android:id="@+id/textview_chat_text_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_text_left"
+                android:gravity="center_vertical"
+                android:maxWidth="270dp"
+                android:text="Chat_Left_Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_chat_right"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user"
+                    android:id="@+id/textview_right_user_name"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#00F"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat_Right_Text"
+                    android:id="@+id/textview_chat_text_right"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:background="@drawable/chat_text_right"
+                    android:gravity="center_vertical"
+                    android:maxWidth="270dp"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_chat_right_head_portrait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/head_portrait2"
+
+                />
+        </LinearLayout>
+</FrameLayout>
